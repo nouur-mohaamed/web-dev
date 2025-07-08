@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aviation club</title>
+  </head>
+  <body>
+    <img src="" alt="aviation club" />
+    <h1>Aviation Club</h1>
+    <form action="" method="post">
+      <div>
+        <label for="fullname">Full Name (in English)</label>
+        <input
+          type="text"
+          name="full name"
+          id="fullname"
+          placeholder="enter full name"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="phone number">Phone Number</label>
+        <input
+          type="tel"
+          name="phone number"
+          id="phone number"
+          min="01000000000"
+          max="01599999999"
+          placeholder="enter Phone Number"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="enter Email"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="academic year">Academic Year</label>
+        <select name="academic year" id="academic year" required>
+          <option value="" disabled selected>Academic Year</option>
+          <option value="freshmen">Freshmen</option>
+          <option value="senior">Senior</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="department">Department</label>
+        <select name="department" id="department" required>
+          <option value="" disabled selected>Department</option>
+          <option value="electric engineering">electric engineering</option>
+          <option value="mechanical engineering">mechanical engineering</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="first preference">First preference</label>
+        <select name="first preference" id="first preference" required>
+          <option value="" disabled selected>first preference</option>
+          <option value="web development">web development</option>
+          <option value="machine learning">machine learning</option>
+          <option value="aruino">Arduino</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="second preference">second preference</label>
+        <select name="second preference" id="second preference" required>
+          <option value="" disabled selected>second preference</option>
+          <option value="web development">web development</option>
+          <option value="machine learning">machine learning</option>
+          <option value="aruino">Arduino</option>
+        </select>
+      </div>
+      <br />
+      <input type="submit" value="register" />
+    </form>
+  </body>
+</html>
