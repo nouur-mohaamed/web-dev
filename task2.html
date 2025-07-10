@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>aviation club</title>
+    <link rel="stylesheet" href="task2.css">
   </head>
   <body>
-    <img src="" alt="aviation club" />
-    <h1>Aviation Club</h1>
+      <div class="main-container">
+  <img class="logo" src="https://aviationclubeg.org/ac2025/imgs/logo_mons.png" alt="aviation club" />
+    <h1 class="title">Aviation Club</h1>
     <form action="" method="post">
-      <div>
+      <div class="input-container">
         <label for="fullname">Full Name (in English)</label>
         <input
           type="text"
@@ -20,7 +22,7 @@
         />
       </div>
 
-      <div>
+      <div class="input-container">
         <label for="phone number">Phone Number</label>
         <input
           type="tel"
@@ -33,7 +35,7 @@
         />
       </div>
 
-      <div>
+      <div class="input-container">
         <label for="email">Email</label>
         <input
           type="email"
@@ -44,7 +46,7 @@
         />
       </div>
 
-      <div>
+      <div class="input-container">
         <label for="academic year">Academic Year</label>
         <select name="academic year" id="academic year" required>
           <option value="" disabled selected>Academic Year</option>
@@ -53,7 +55,7 @@
         </select>
       </div>
 
-      <div>
+      <div class="input-container">
         <label for="department">Department</label>
         <select name="department" id="department" required>
           <option value="" disabled selected>Department</option>
@@ -62,7 +64,7 @@
         </select>
       </div>
 
-      <div>
+      <div class="input-container">
         <label for="first preference">First preference</label>
         <select name="first preference" id="first preference" required>
           <option value="" disabled selected>first preference</option>
@@ -72,7 +74,7 @@
         </select>
       </div>
 
-      <div>
+      <div class="input-container">
         <label for="second preference">second preference</label>
         <select name="second preference" id="second preference" required>
           <option value="" disabled selected>second preference</option>
@@ -82,7 +84,10 @@
         </select>
       </div>
       <br />
+      <div class="register-button">
       <input type="submit" value="register" />
+      </div>
+      </div>
     </form>
   </body>
 </html>
