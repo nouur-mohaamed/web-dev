@@ -1,121 +1,136 @@
-<<<<<<< HEAD
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-body{
-    background-image:url(https://github.com/MazenEssam02/Web-Development-Workshop/blob/main/Session%202/Academy%20Form%20Task/imgs/main_bg7.jpg?raw=true);
-    background-position: center;
-    background-size:cover;
+html {
+  font-size: 16px;
 }
-.logo{
-    display: block;
-    margin:0 auto;
-    width: 50%;
-
+body {
+  background-image: url(https://github.com/MazenEssam02/Web-Development-Workshop/blob/main/Session%202/Academy%20Form%20Task/imgs/main_bg7.jpg?raw=true);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.title{
-    color: white;
-    text-align: center;
-    padding-bottom:15px;
-    padding-top: 5px;
-    border-bottom: 2px gray solid;
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+   min-width:100px;
+        min-height:45px;
 }
-.main-container{
-    background-color: rgba(0,0, 0,0.6);
-    margin: 40.2px auto;
-    width: 50%; 
-    padding: 20px;
-    border-radius: 10px;
-    
-    
+.title {
+  color: white;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 5px;
+  border-bottom: 2px gray solid;
+  font-size: 2rem;
+  text-shadow: 2px -2px 2px rgb(0, 0, 0);
 }
-.input-container label{
-color: white;
-display: block;
-font-weight: bold;
-text-align: center;
-margin:5px 0px;
+.main-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 40.2px auto;
+  width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px -2px 2px rgba(0, 0, 0, 0.225);
 }
-.input-container input,.input-container select{
-text-align: center;
-width: 100%;
-padding:5px;
-border-radius: 5px;
+.input-without-button {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.input-container label,
+.email-container label {
+  color: white;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0px;
+  font-size: 1rem;
+}
+.input-container {
+  width: 48%;
+  margin-bottom: 15px;
+}
+.input-container input,
+.input-container select,
+.email-container input {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  appearance: none;
+  border: 1px solid grey;
+}
+.email-container {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.register-button{
+    display: flex;
+    justify-content: center;
+}
+.register-button input {
+  padding: 5px;
+  border-radius: 3px;
+  width: 50%;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(33, 100, 208, 0.7);
+  border:none;
+}
+.register-button input:hover {
+  background-color: rgb(15, 18, 121, 0.7);
+  transition: 30ms;
+  cursor: pointer;
+}
+@media(max-width:976px)and (min-width:722px){
+ .input-container {
+    width:100%;
+}
+html{
+    font-size:14px;
+}
+.input-without-button{
+    max-height:300px;
+    overflow: scroll;
+    scrollbar-width:none;
+}
+.input-container input,
+.input-container select,
+.email-container input {
+    padding:5px;
+}
+}
+@media(max-width:722px){
+    html{
+        font-size:12px;
+    }
+ .input-container {
+    width:100%;
+}
+.input-without-button{
+    max-height:300px;
+    overflow: scroll;
+    scrollbar-width:none;
+}
+.input-container input,
+.input-container select,
+.email-container input {
+    padding:5px;
 }
 .register-button input{
-   padding: 5px;
-   border-radius: 3px;
-    width: 100%;
-    color: white;
-    font-weight:bold;
-    background-color:rgba(33, 100, 208, 0.7);
+    padding:2px;
 }
-.register-button input:hover{
-    background-color:rgb(15, 18, 121,0.7);
-transition: 30ms;
-cursor:pointer;
+.main-container {
+width:300px;
 }
-=======
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:sans-serif;
 }
-body{
-    background-image:url(https://github.com/MazenEssam02/Web-Development-Workshop/blob/main/Session%202/Academy%20Form%20Task/imgs/main_bg7.jpg?raw=true);
-    background-position: center;
-    background-size:cover;
-}
-.logo{
-    display: block;
-    margin:0 auto;
-    width: 50%;
-
-}
-.title{
-    color: white;
-    text-align: center;
-    padding-bottom:15px;
-    padding-top: 5px;
-    border-bottom: 2px gray solid;
-}
-.main-container{
-    background-color: rgba(0,0, 0,0.6);
-    margin: 40.2px auto;
-    width: 50%; 
-    padding: 20px;
-    border-radius: 10px;
-    
-    
-}
-.input-container label{
-color: white;
-display: block;
-font-weight: bold;
-text-align: center;
-margin:5px 0px;
-}
-.input-container input,.input-container select{
-text-align: center;
-width: 100%;
-padding:5px;
-border-radius: 5px;
-}
-.register-button input{
-   padding: 5px;
-   border-radius: 3px;
-    width: 100%;
-    color: white;
-    font-weight:bold;
-    background-color:rgba(33, 100, 208, 0.7);
-}
-.register-button input:hover{
-    background-color:rgb(15, 18, 121,0.7);
-transition: 30ms;
-cursor:pointer;
-}
->>>>>>> 33a44f80de647679efdc6539281c493f8f99225f
